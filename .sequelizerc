@@ -1,0 +1,10 @@
+//cntl + p >change language mode = js --> para ser codado em js
+
+const { resolve } = require('path');
+
+module.exports = {
+  config: resolve(__dirname, 'src', 'config', 'database.js'), //caminho da config
+  'models-path': resolve(__dirname, 'src', 'models'), //caminho dos models
+  'migrations-path': resolve(__dirname, 'src', 'database', 'migrations'), //caminho das alteraçoes na base de dados
+  'seeders-path': resolve(__dirname, 'src', 'database', 'seeds'),
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <section class="conteiner">
+
+    <div class="info-content">
+      <div class="cont-picture">
+        <div class="picture">
+          <div class="img">
+            <img src="" alt="Imagem selecionada" id="previewImage" style="display: none;">
+          </div>
+        </div>
+        <div class="but">
+          <button type="button" class="btn btn-light" id="buton-one" onclick="flipFront()">Biografia</button>
+          <button type="button" class="btn btn-light" onclick="flipBack()">Dados</button>
+        </div>
+      </div>
+
+      <div class="user-profile">
+        <div class="front-content">
+          <div>
+            <p>Nome</p>
+            <strong></strong>
+          </div>
+          <div>
+            <p>Idade</p>
+            <strong></strong>
+          </div>
+          <div>
+            <p>Rua</p>
+            <strong></strong>
+          </div>
+          <div>
+            <p>Bairro</p>
+            <strong></strong>
+          </div>
+          <div>
+            <p>Estado</p>
+            <strong></strong>
+          </div>
+        </div>
+        <div class="back-content">
+          <h1 class="bio">Biografia</h1>
+          <p></p>
+        </div>
+      </div>
+    </div>
+
+
+    </div>
+
+  </section>
+
+  <section class="conteiner">
+    <div class="form">
+      <div class="form-content">
+        <form class="data">
+          <div class="nome">
+            <label for="exampleInputNome" class="form-label">Nome</label>
+            <input type="text" class="form-control" id="exampleInputNome error" name="nome">
+          </div>
+          <div class="idade">
+            <label for="exampleInputIdade" class="form-label">Idade</label>
+            <input type="text" class="form-control" id="exampleInputIdade error" name="idade">
+          </div>
+          <div class="Rua">
+            <label for="exampleInputRua" class="form-label">Rua</label>
+            <input type="text" class="form-control" id="exampleInputRua error" name="rua">
+          </div>
+          <div class="Bairro">
+            <label for="exampleInputBairro" class="form-label">Bairro</label>
+            <input type="text" class="form-control" id="exampleInputBairro error" name="bairro">
+          </div>
+          <div class="Estado">
+            <label for="exampleInputEstado" class="form-label">Estado</label>
+            <input type="text" class="form-control" id="exampleInputEstado error" name="estado">
+          </div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputBiografia" class="form-label" id="biografia">Biografia</label>
+        <textarea class="form-control" id="biografiaText" rows="4" name="biografia"></textarea>
+      </div>
+      <div class="mb-3">
+        <button type="button" class="btn btn-light" onclick="flipForm()" id="bioForm">Biografia</button>
+        <input type="file" class="form-control" id="exampleInputImagem" accept="image/*">
+      </div>
+      <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+      <div class="container-msg">
+      </div>
+      </form>
+    </div>
+  </section>
+  <script src="script.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
